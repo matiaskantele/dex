@@ -1,0 +1,27 @@
+{
+  "name": "devops-starter",
+  "version": "0.1.0",
+  "description": "DevOps toolbox starter pack for Node.js project",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "DevOps",
+    "Node.js"
+  ],
+  "author": "matias.kantele@siili.com",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "jest": "^22.0.4",
+    "supertest": "^3.0.0"
+  }
+}
