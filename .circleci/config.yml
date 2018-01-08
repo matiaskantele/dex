@@ -1,23 +1,26 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/devops-starter
     docker:
       - image: circleci/node:carbon
+    working_directory: ~/devops-starter
+
     steps:
       - checkout
-      - run:
-          name: update-yarn
-          command: 'sudo npm install -g yarn@latest'
+
+      # Download and cache dependencies
       - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-      - run:
-          name: install-yarn
-          command: yarn install
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run: yarn install
+
       - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
           paths:
-            - ./node_modules
-      - run:
-          name: test
-          command: yarn test
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      # run tests!
+      - run: yarn test
