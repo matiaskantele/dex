@@ -4,16 +4,16 @@ DevOps toolkit starter pack.
 
 ## Features
 
-* Node.js API
-* CircleCI
-* Docker
+* Node.js :: REST API server
+* CircleCI :: Running automatic tests
+* Docker  :: Container technology
 
 ## Development
 
 ```zsh
-$ npm test # run tests
+$ yarn test # run tests
 
-$ npm start # start app locally
+$ yarn dev # start app locally
 ```
 
 ### Docker

@@ -8,7 +8,8 @@
   },
   "main": "app.js",
   "scripts": {
-    "start": "node server.js",
+    "dev": "node server.js",
+    "start": "NODE_ENV=production node server.js",
     "test": "jest"
   },
   "keywords": [
@@ -18,7 +19,8 @@
   "author": "matias.kantele@siili.com",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "winston": "^3.0.0-rc1"
   },
   "devDependencies": {
     "jest": "^22.0.4",
