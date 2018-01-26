@@ -11,6 +11,6 @@ describe('Test the root path', () => {
       .get('/')
       .expect(200)
       .expect('Content-Type', /json/);
-    expect(response.body.message).toBe("Hello Aktia!");
+    expect(response.body.message).toBe("Hello World!");
   });
 });

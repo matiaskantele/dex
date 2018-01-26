@@ -1,4 +1,4 @@
-# DevOps Starter
+# DevOps Starter [![CircleCI](https://circleci.com/gh/matiisi/devops-starter.svg?style=svg)](https://circleci.com/gh/matiisi/devops-starter)
 
 DevOps toolkit starter pack.
 
