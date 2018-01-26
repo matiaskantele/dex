@@ -10,7 +10,11 @@
   "scripts": {
     "dev": "node server.js",
     "start": "NODE_ENV=production node server.js",
-    "test": "jest"
+    "test": "jest --coverage",
+    "ci-test": "jest --coverage && cat .coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "jest": {
+    "coverageDirectory": ".coverage/"
   },
   "keywords": [
     "DevOps",
@@ -24,6 +28,7 @@
   },
   "devDependencies": {
     "jest": "^22.0.4",
-    "supertest": "^3.0.0"
+    "supertest": "^3.0.0",
+    "coveralls": "^3.0.0"
   }
 }
