@@ -7,6 +7,7 @@ DevOps toolkit starter pack.
 * Node.js :: REST API server
 * CircleCI :: Running automatic tests
 * Docker  :: Container technology
+* Coveralls :: Code Coverage badge to GitHub
 
 ## Development
 

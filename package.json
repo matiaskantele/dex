@@ -27,8 +27,12 @@
     "winston": "^3.0.0-rc1"
   },
   "devDependencies": {
+    "coveralls": "^3.0.0",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
     "jest": "^22.0.4",
-    "supertest": "^3.0.0",
-    "coveralls": "^3.0.0"
+    "prettier-eslint": "^8.8.1",
+    "supertest": "^3.0.0"
   }
 }
