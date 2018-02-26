@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:carbon
-    working_directory: ~/devops-starter
+    working_directory: ~/dex
 
     steps:
       - checkout
