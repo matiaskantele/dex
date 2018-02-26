@@ -1,6 +1,6 @@
-# DevOps Starter [![CircleCI](https://circleci.com/gh/matiisi/devops-starter.svg?style=shield)](https://circleci.com/gh/matiisi/devops-starter) [![Coverage Status](https://coveralls.io/repos/github/matiisi/devops-starter/badge.svg)](https://coveralls.io/github/matiisi/devops-starter)
+# DevOps Example [![CircleCI](https://circleci.com/gh/matiisi/dex.svg?style=shield)](https://circleci.com/gh/matiisi/dex) [![Coverage Status](https://coveralls.io/repos/github/matiisi/dex/badge.svg)](https://coveralls.io/github/matiisi/dex)
 
-DevOps toolkit starter pack.
+DevOps example of a fully automated development workflow.
 
 ## Features
 
