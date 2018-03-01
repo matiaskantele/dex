@@ -38,3 +38,10 @@ $ docker image rmi devops-starter:0.1.0 # remove container image
 
 $ docker image rmi node:carbon-alpine# remove container base image
 ```
+
+#### GCP Setup
+1. Select/Create Project
+2. Enable billing for the project
+3. Enable the Kubernetes Engine, Container Builder and Resource Manager APIs
+
+

@@ -8,6 +8,7 @@
   },
   "main": "app.js",
   "scripts": {
+    "eslint-check": "./node_modules/.bin/eslint .",
     "dev": "node server.js",
     "start": "NODE_ENV=production node server.js",
     "test": "jest --coverage",
@@ -30,9 +31,11 @@
     "coveralls": "^3.0.0",
     "eslint": "^4.17.0",
     "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.6.0",
     "jest": "^22.0.4",
-    "prettier-eslint": "^8.8.1",
+    "prettier": "^1.11.0",
     "supertest": "^3.0.0"
   }
 }
