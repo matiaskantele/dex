@@ -6,7 +6,7 @@ defaults: &defaults
 
 version: 2
 jobs:
-  validate:
+  build:
     <<: *defaults
     steps:
       - checkout
@@ -33,15 +33,14 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASS
         docker push $DOCKER_USER/dex:$TAG
 
-
 workflows:
   version: 2
-  validate-and-deploy:
+  build-and-deploy:
     jobs:
-      - validate
+      - build
       - deploy:
         requires:
-          - validate
+          - build
         filters:
           branches:
             only: master
