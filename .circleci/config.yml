@@ -31,7 +31,6 @@ jobs:
   test:
     <<: *defaults
     steps:
-      - checkout
       - attach_workspace:
           at: ~/dex
       - run: yarn ci-test
