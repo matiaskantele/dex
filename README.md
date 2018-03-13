@@ -5,7 +5,7 @@ DevOps example of a fully automated modern development workflow.
 ## Features
 
 * Node.js :: REST API server
-* CircleCI :: Running automatic tests
+* CircleCI :: Running automated tests and building deployable docker image
 * Docker  :: Container technology
 * Coveralls :: Code Coverage badge to GitHub
 
