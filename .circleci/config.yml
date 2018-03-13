@@ -46,9 +46,12 @@ workflows:
           tags:
             only: /.*/
       - test:
-        requires: build
+        requires:
+          - build
       - deploy:
-        requires: test
+        requires:
+          - build
+          - test
         filters:
           branches:
             only: master
