@@ -25,6 +25,7 @@ jobs:
   test:
     <<: *defaults
     steps:
+      - checkout
       - run: yarn ci-test
 
   deploy:
