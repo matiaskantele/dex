@@ -43,7 +43,7 @@ jobs:
       - setup_remote_docker
       - run: |
           TAG=$(git describe --tags)
-          docker build -t dex:$TAG .
+          docker build -t $DOCKER_USER/dex:$TAG .
           docker login -u $DOCKER_USER -p $DOCKER_PASS
           docker push $DOCKER_USER/dex:$TAG
 
@@ -66,8 +66,8 @@ workflows:
             - build
             - test
           filters:
-            branches:
-              only: master
             tags:
               only: /^v.*/
+            branches:
+              only: master
 
