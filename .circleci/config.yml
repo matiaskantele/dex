@@ -38,6 +38,8 @@ jobs:
   deploy:
     <<: *defaults
     steps:
+      - attach_workspace:
+          at: ~/dex
       - setup_remote_docker
       - run: |
           TAG=$(git describe --tags)
