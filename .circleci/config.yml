@@ -10,6 +10,8 @@ jobs:
     <<: *defaults
     steps:
       - checkout
+      - attach_workspace:
+          at: ~/dex
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -21,11 +23,16 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+      - persist_to_workspace:
+          root: .
+
 
   test:
     <<: *defaults
     steps:
       - checkout
+      - attach_workspace:
+          at: ~/dex
       - run: yarn ci-test
 
   deploy:
