@@ -1,4 +1,4 @@
-# DevOps Example [![CircleCI](https://circleci.com/gh/matiisi/dex.svg?style=shield)](https://circleci.com/gh/matiisi/dex) [![Coverage Status](https://coveralls.io/repos/github/matiisi/dex/badge.svg)](https://coveralls.io/github/matiisi/dex)
+# DevOps Experience [![CircleCI](https://circleci.com/gh/matiisi/dex.svg?style=shield)](https://circleci.com/gh/matiisi/dex) [![Coverage Status](https://coveralls.io/repos/github/matiisi/dex/badge.svg)](https://coveralls.io/github/matiisi/dex)
 
 DevOps example of a fully automated development workflow.
 
